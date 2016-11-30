@@ -26,7 +26,7 @@ form {
   margin: 20px auto;
 }
 
-form input, form textarea {
+form input, form button, form textarea {
   border: 0;
   outline: 0;
   padding: 1em;
@@ -47,6 +47,9 @@ form input:focus, form textarea:focus {
   -webkit-box-shadow: 0 0px 2px #e74c3c !important;
   box-shadow: 0 0px 2px #e74c3c !important;
 }
+
+
+
 form #input-submit {
   color: white;
   background: #e74c3c;
@@ -67,6 +70,13 @@ form textarea {
   margin-bottom: 1em;
 }
 
+.full {
+ float: right;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+
 .right {
   width: 50%;
 }
@@ -75,12 +85,27 @@ form textarea {
   margin-right: 2%;
 }
 
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 @media (max-width: 480px) {
   .half {
     width: 100%;
     float: none;
     margin-bottom: 0;
   }
+  
+}
+
+@media (max-width: 600px) {
+  .full {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+  
 }
 
 /* Clearfix */
