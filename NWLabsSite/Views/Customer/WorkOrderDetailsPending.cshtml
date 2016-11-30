@@ -1,0 +1,118 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
+}
+@{
+    ViewBag.Title = "Details";
+}
+<br />
+<h3>Order #8675310 Details</h3>
+<br />
+
+<table class="table">
+    <tr>
+        <th>
+            Compound Name
+        </th>
+        <th>
+            Assay Name
+        </th>
+        <th>
+            Protocol
+        </th>
+        <th>
+            Test Code
+        </th>
+        <th>
+            Scheduled Date
+        </th>
+        <th>
+            Quote
+        </th>
+        <th>Status</th>
+    </tr>
+
+
+    <tr>
+        <td>
+            Carboxylate
+        </td>
+        <td>
+            Lipoxygenase
+        </td>
+        <td>
+            Laboratory
+        </td>
+        <td>
+            BP
+        </td>
+        <td>
+            11/27/16
+        </td>
+        <td>
+            $100.00
+        </td>
+        <td>
+            Received
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            Carboxylate
+        </td>
+        <td>
+            Abisdia Corymbifera
+        </td>
+        <td>
+            Laboratory
+        </td>
+        <td>
+            PS
+        </td>
+        <td>
+            11/30/16
+        </td>
+        <td>
+            $110.00
+        </td>
+        <td>
+            In Progress
+        </td>
+    </tr>
+</table>
+<div class="container-fluid">
+    <div class="col-md-6">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Additional Tests:</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table">
+                    <tr>
+                        <th>Compound</th>
+                        <th>Recommended Tests</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Carboxylate</td>
+                        <td>Biochemical Pharmacology</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Select
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Accept</a></li>
+                                    <li><a href="#">Decline</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">More Information</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

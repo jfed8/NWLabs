@@ -18,5 +18,22 @@ namespace NWLabsSite.Controllers
         {
             return View();
         }
+
+        public ActionResult WorkOrderDetails()
+        {
+            return View();
+        }
+
+        public ActionResult WorkOrderDetailsPending()
+        {
+            return View();
+        }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        
     }
 }
