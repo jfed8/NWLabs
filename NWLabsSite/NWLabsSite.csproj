@@ -249,6 +249,7 @@
     <Content Include="Views\Customer\WorkOrderDetails.cshtml" />
     <Content Include="Views\Customer\WorkOrderDetailsPending.cshtml" />
     <Content Include="Views\Customer\Create.cshtml" />
+    <Content Include="Views\WorkOrder\UploadResults.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
