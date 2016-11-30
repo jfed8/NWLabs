@@ -2,40 +2,46 @@
 @{
     ViewBag.Title = "Register";
 }
+<br />
+<h2>Register</h2>
+<br />
 
-<h2>@ViewBag.Title.</h2>
-
-@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+@using (Html.BeginForm("Create", "Customer", FormMethod.Get))
 {
-    @Html.AntiForgeryToken()
-    <h4>Create a new account.</h4>
-    <hr />
-    @Html.ValidationSummary("", new { @class = "text-danger" })
-    <div class="form-group">
-        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" class="btn btn-default" value="Register" />
-        </div>
-    </div>
-}
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
+    <table class="table">
+        <tr>
+            <td>First Name:</td>
+            <td>@Html.TextBox("FirstName")</td>
+        </tr>
+        <tr>
+            <td>Last Name: </td>
+            <td>@Html.TextBox("LastName")</td>
+        </tr>
+        <tr>
+            <td>Address: </td>
+            <td>@Html.TextBox("Address")</td>
+        </tr>
+        <tr>
+            <td>City: </td>
+            <td>@Html.TextBox("City")</td>
+        </tr>
+        <tr>
+            <td> State:</td>
+            <td>@Html.TextBox("State")</td>
+        </tr>
+        <tr>
+            <td> Zip Code: </td>
+            <td>@Html.TextBox("Zip")</td>
+        </tr>
+        <tr>
+            <td>Phone Number: </td>
+            <td>@Html.TextBox("Phone")</td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td>@Html.TextBox("Email")</td>
+        </tr>
+    </table>
+    <br />
+    <input type="submit" value="Submit">
 }
