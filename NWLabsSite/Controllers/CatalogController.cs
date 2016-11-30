@@ -27,8 +27,34 @@ namespace NWLabsSite.Controllers
         }
 
         // GET:
+        [HttpGet]
         public ActionResult Quote()
         {
+            ViewBag.Assay = "Lipoxygenase";
+
+            List<SelectListItem> items = new List<SelectListItem>();
+
+            items.Add(new SelectListItem { Text = "Magnesium", Value = "0" });
+
+            items.Add(new SelectListItem { Text = "Phenolic", Value = "1" });
+
+            items.Add(new SelectListItem { Text = "Trisilate", Value = "2" });
+
+            items.Add(new SelectListItem { Text = "Carboxylate", Value = "3" });
+
+            items.Add(new SelectListItem { Text = "Not Selected", Value = "4", Selected = true });
+
+            ViewBag.Compound = items;
+
+            return View();
+        }
+
+        public ActionResult ConfirmedQuote()
+        {
+            ViewBag.Assay = "Lipoxygenase";
+            ViewBag.Compound = "Magnesium";
+            ViewBag.Price = "$100.00";
+
             return View();
         }
     }
