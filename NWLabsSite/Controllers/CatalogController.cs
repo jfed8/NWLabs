@@ -55,6 +55,7 @@ namespace NWLabsSite.Controllers
             ViewBag.Compound = "Magnesium";
             ViewBag.Price = "$100.00";
 
+
             return View();
         }
     }
