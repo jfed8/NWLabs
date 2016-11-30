@@ -13,7 +13,7 @@
             <h3 class="panel-title">Recent Orders</h3>
         </div>
         <div class="panel-body">
-            <button class="btn btn-primary" style="float:right;">New Work Order Request</button><br />
+            <button class="btn btn-success" style="float:right;">New Work Order Request</button><br />
             <h4>Pending</h4>
             <table class="table">
                 <tr>
@@ -28,14 +28,14 @@
                     <td>Carboxylate</td>
                     <td>Lipoxygenase</td>
                     <td>Received</td>
-                    <td>@Html.ActionLink("View Order Details", "WorkOrderDetailsPending", "Customer")</td>
+                    <td>@Html.ActionLink("Order Details", "WorkOrderDetailsPending", "Customer")</td>
                 </tr>
                 <tr>
                     <td>8675310</td>
                     <td>Carboxylate</td>
                     <td>Abisdia Corymbifera</td>
                     <td>In Progress</td>
-                    <td>@Html.ActionLink("View Order Details", "WorkOrderDetailsPending", "Customer")</td>
+                    <td>@Html.ActionLink("Order Details", "WorkOrderDetailsPending", "Customer")</td>
                 </tr>
 
 
@@ -52,7 +52,7 @@
                 <tr>
                     <td>8675309</td>
                     <td>12/2/2016</td>
-                    <td>@Html.ActionLink("View Details and Results", "WorkOrderDetails", "Customer")</td>
+                    <td>@Html.ActionLink("Order Details/Results", "WorkOrderDetails", "Customer") | <a href="#">Invoice</a></td>
             </table>
         </div>
         <p style="padding-left:20px;"><a href="#">View Complete Order History</a></p>
