@@ -2,46 +2,25 @@
 @{
     ViewBag.Title = "Register";
 }
-<br />
-<h2>Register</h2>
-<br />
 
-@using (Html.BeginForm("Create", "Customer", FormMethod.Get))
-{
-    <table class="table">
-        <tr>
-            <td>First Name:</td>
-            <td>@Html.TextBox("FirstName")</td>
-        </tr>
-        <tr>
-            <td>Last Name: </td>
-            <td>@Html.TextBox("LastName")</td>
-        </tr>
-        <tr>
-            <td>Address: </td>
-            <td>@Html.TextBox("Address")</td>
-        </tr>
-        <tr>
-            <td>City: </td>
-            <td>@Html.TextBox("City")</td>
-        </tr>
-        <tr>
-            <td> State:</td>
-            <td>@Html.TextBox("State")</td>
-        </tr>
-        <tr>
-            <td> Zip Code: </td>
-            <td>@Html.TextBox("Zip")</td>
-        </tr>
-        <tr>
-            <td>Phone Number: </td>
-            <td>@Html.TextBox("Phone")</td>
-        </tr>
-        <tr>
-            <td>Email: </td>
-            <td>@Html.TextBox("Email")</td>
-        </tr>
-    </table>
-    <br />
-    <input type="submit" value="Submit">
-}
+
+<link rel="stylesheet" type="text/css" href="~/Content/formbox.css">
+
+<div class="col-md-12">
+    <h1>Register</h1>
+    <form class="center cf">
+        <div class="center right cf">
+            <input type="text" id="input-Fname" placeholder="First Name">
+            <input type="email" id="input-Lname" placeholder="Last Name">
+            <input type="text" id="input-address" placeholder="Address">
+            <input type="text" id="input-city" placeholder="City">
+            <input type="text" id="input-state" placeholder="State">
+            <input type="text" id="input-zip" placeholder="Zip Code">
+            
+            <input type="text" id="input-phone" placeholder="Phone Number">
+            <input type="text" id="input-email" placeholder="Email">
+            <a class="btn-default btn-block center right" id="input-submit" href="@Url.Action("Create", "Customer")">Submit</a>
+        </div>
+    </form>
+</div>
+
