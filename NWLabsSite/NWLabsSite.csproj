@@ -180,6 +180,7 @@
     <Content Include="Content\formbox.css" />
     <Content Include="Content\img\beakerBlue-02.png" />
     <Content Include="Content\img\INTEXJumbotron-01.png" />
+    <Content Include="Content\img\INTEXJumbotronWithButton-01.png" />
     <Content Include="Content\img\ResultsExample.jpg" />
     <Content Include="Content\img\TestTubes.jpg" />
     <Content Include="favicon.ico" />

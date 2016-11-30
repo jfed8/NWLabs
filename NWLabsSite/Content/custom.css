@@ -6,12 +6,19 @@
     padding-top: 400px;
     padding-bottom: 30px;
     margin-bottom: 30px;
-    background-image: url(../../Content/img/INTEXJumbotron-01.png);
+    background-image: url(../../Content/img/INTEXJumbotronWithButton-01.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    fill-opacity: .60;
+    fill-opacity: inherit;
 }
+
+    .my-jumbotron p {
+        margin-bottom: 15px;
+        margin-left: 15px;
+        font-size: 24px;
+        font-weight: 200;
+    }
 
 #video-background { 
       position: fixed;
