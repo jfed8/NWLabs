@@ -1,4 +1,6 @@
-﻿
+﻿@{
+    Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
+}
 @{
     ViewBag.Title = "CustAccount";
 }
@@ -15,7 +17,7 @@
                 <tr>
                     <th>Order Number</th>
                     <th>Compound</th>
-                    <th>Assay Number</th>
+                    <th>Assay Test</th>
                     <th>Status</th>
                     <th></th>
                 </tr>
@@ -54,13 +56,13 @@
                 </tr>
                 <tr>
                     <td>8675310</td>
-                    <td>Trisilicate</td>
+                    <td>Carboxylate</td>
                     <td>In Progress</td>
                     <td><a href="#">View Results</a></td>
                 </tr>
             </table>
         </div>
-        <p><a href="#">View Order History</a></p>
+        <p><a href="#">  View Order History</a></p>
     </div>
 </div>
 
@@ -71,7 +73,8 @@
         </div>
         <div class="panel-body">
             <p><a href="#">Edit Account Information</a></p>
-            <p><a href="#">Edit Payment Options</a></p>
+            <p><a href="#">Update Preferences</a></p>
+            <p><a href="#">Manage Payment Options</a></p>
         </div>
     </div>
 </div>
