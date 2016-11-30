@@ -1,8 +1,11 @@
 ﻿@{
+    Layout = "~/Views/Shared/_LayoutEmployee.cshtml";
+}
+@{
     ViewBag.Title = "Details";
 }
 <br />
-<h3>Order Details</h3>
+<h3>Order #8675309 Details</h3>
 <br />
 
 <table class="table">
@@ -17,16 +20,28 @@
             Assay Name
         </th>
         <th>
-            Employee Name
+            Protocol
         </th>
         <th>
-            Status
+            Test Code
         </th>
         <th>
-            Comments
+            Scheduled Date
         </th>
         <th>
-            Work Details
+            Date Completed
+        </th>
+        <th>
+            Quote
+        </th>
+        <th>
+            Actual Price
+        </th>
+        <th>
+            Hours Worked
+        </th>
+        <th>
+            Results
         </th>
     </tr>
 
@@ -36,68 +51,106 @@
             8675309
         </td>
         <td>
-            12/01/2016
+            Magnesium
         </td>
         <td>
-            27.5
+            Lipoxygenase
         </td>
         <td>
-            Shawn Spencer
+            Laboratory
         </td>
         <td>
-            Completed
+            BP
         </td>
         <td>
-            Rushed
+            11/27/16
         </td>
         <td>
-            @Html.ActionLink("See Details", "Results", "WorkOrder")
-        </td>
-    </tr>
-    <tr>
-        <td>
-            8675310
+            12/01/16
         </td>
         <td>
-            01/19/2017
+            $100.00
         </td>
         <td>
-            10.2
+            $112.00
         </td>
         <td>
-            Benedict Cumberbatch
+            11.2
         </td>
         <td>
-            Pending
-        </td>
-        <td>
-            Rushed
-        </td>
-        <td>
-            @Html.ActionLink("See Details", "Results", "WorkOrder")
+            <a href="~/Content/img/ResultsExample.pdf">View Results</a>
         </td>
     </tr>
+    
     <tr>
         <td>
-            8675311
+            8675309
         </td>
         <td>
-            02/15/2017
+            Magnesium
         </td>
         <td>
-            11
+            Abisdia Corymbifera
         </td>
         <td>
-            Zooey Deschanel
+            Laboratory
         </td>
         <td>
-            Pending
+            PS
         </td>
         <td>
-            Discount Applied
+            11/30/16
         </td>
         <td>
-            @Html.ActionLink("See Details", "Results", "WorkOrder")
+            12/01/16
+        </td>
+        <td>
+            $110.00
+        </td>
+        <td>
+            $110.00
+        </td>
+        <td>
+            21.0
+        </td>
+        <td>
+            <a href="~/Content/img/ResultsExample.pdf">View Results</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            8675309
+        </td>
+        <td>
+            Phenolic
+        </td>
+        <td>
+            Abisdia Corymbifera
+        </td>
+        <td>
+            Laboratory
+        </td>
+        <td>
+            PF
+        </td>
+        <td>
+            12/30/16
+        </td>
+        <td>
+            N/A
+        </td>
+        <td>
+            $200.00
+        </td>
+        <td>
+            N/A
+        </td>
+        <td>
+            30.0
+        </td>
+        <td>
+            <a href="~/Content/img/ResultsExample.pdf">View Results</a>
         </td>
     </tr>
 
