@@ -7,67 +7,69 @@
 <br />
 <h3 style="padding-left:12px;">Customer Account</h3>
 <br />
-<div class="col-md-9">
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h3 class="panel-title">Recent Orders</h3>
+<div class="container-fluid">
+    <div class="col-md-9">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Recent Orders</h3>
+            </div>
+            <div class="panel-body">
+                <button class="btn btn-success" style="float:right;">New Work Order Request</button><br />
+                <h4>Pending</h4>
+                <table class="table">
+                    <tr>
+                        <th>Order Number</th>
+                        <th>Compound</th>
+                        <th>Assay Test</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>8675310</td>
+                        <td>Carboxylate</td>
+                        <td>Lipoxygenase</td>
+                        <td>Received</td>
+                        <td>@Html.ActionLink("Order Details", "WorkOrderDetailsPending", "Customer")</td>
+                    </tr>
+                    <tr>
+                        <td>8675310</td>
+                        <td>Carboxylate</td>
+                        <td>Abisdia Corymbifera</td>
+                        <td>In Progress</td>
+                        <td>@Html.ActionLink("Order Details", "WorkOrderDetailsPending", "Customer")</td>
+                    </tr>
+
+
+                </table>
+                <p style="color: red;">ACTION REQUIRED: Additional tests recommended for Order @Html.ActionLink("#8675310", "WorkOrderDetailsPending", "Customer")</p>
+
+                <h4>Completed</h4>
+                <table class="table">
+                    <tr>
+                        <th>Order Number</th>
+                        <th>Completed Date</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>8675309</td>
+                        <td>12/2/2016</td>
+                        <td>@Html.ActionLink("Order Details/Results", "WorkOrderDetails", "Customer") | <a href="#">Invoice</a></td>
+                </table>
+            </div>
+            <p style="padding-left:20px;"><a href="#">View Complete Order History</a></p>
         </div>
-        <div class="panel-body">
-            <button class="btn btn-success" style="float:right;">New Work Order Request</button><br />
-            <h4>Pending</h4>
-            <table class="table">
-                <tr>
-                    <th>Order Number</th>
-                    <th>Compound</th>
-                    <th>Assay Test</th>
-                    <th>Status</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td>8675310</td>
-                    <td>Carboxylate</td>
-                    <td>Lipoxygenase</td>
-                    <td>Received</td>
-                    <td>@Html.ActionLink("Order Details", "WorkOrderDetailsPending", "Customer")</td>
-                </tr>
-                <tr>
-                    <td>8675310</td>
-                    <td>Carboxylate</td>
-                    <td>Abisdia Corymbifera</td>
-                    <td>In Progress</td>
-                    <td>@Html.ActionLink("Order Details", "WorkOrderDetailsPending", "Customer")</td>
-                </tr>
-
-
-            </table>
-            <p style="color: red;">ACTION REQUIRED: Additional tests recommended for Order @Html.ActionLink("#8675310", "WorkOrderDetailsPending", "Customer")</p>
-
-            <h4>Completed</h4>
-            <table class="table">
-                <tr>
-                    <th>Order Number</th>
-                    <th>Completed Date</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td>8675309</td>
-                    <td>12/2/2016</td>
-                    <td>@Html.ActionLink("Order Details/Results", "WorkOrderDetails", "Customer") | <a href="#">Invoice</a></td>
-            </table>
-        </div>
-        <p style="padding-left:20px;"><a href="#">View Complete Order History</a></p>
     </div>
-</div>
 
-<div class="col-md-3">
-    <div class="panel panel-danger">
-        <div class="panel-heading">
-            <h3 class="panel-title">Settings</h3>
-        </div>
-        <div class="panel-body">
-            <p><a href="#">Edit Account Information</a></p>
-            <p><a href="#">Update Preferences</a></p>
-            <p><a href="#">Manage Payment Options</a></p>
+    <div class="col-md-3">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Settings</h3>
+            </div>
+            <div class="panel-body">
+                <p><a href="#">Edit Account Information</a></p>
+                <p><a href="#">Update Preferences</a></p>
+                <p><a href="#">Manage Payment Options</a></p>
+            </div>
         </div>
     </div>
 </div>
