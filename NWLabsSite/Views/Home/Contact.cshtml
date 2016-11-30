@@ -1,17 +1,35 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<link rel="stylesheet" type="text/css" href="~/Content/formbox.css">
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+
+<div class="col-md-12">
+    <h1>Contact Us</h1>
+    <form class="cf">
+        <div class="half left cf">
+            <input type="text" id="input-name" placeholder="Name">
+            <input type="email" id="input-email" placeholder="Email address">
+            <input type="text" id="input-subject" placeholder="Subject">
+        </div>
+        <div class="half right cf">
+            <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+        </div>
+        <input type="submit" value="Submit" id="input-submit">
+    </form>
+</div>
+
+<div style="text-align: center;">
+    <address>
+        One Microsoft Way<br />
+        Redmond, WA 98052-6399<br />
+        <abbr title="Phone">P:</abbr> 425.555.0100
+    </address>
+
+    <address>
+        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    </address>
+
+</div>
