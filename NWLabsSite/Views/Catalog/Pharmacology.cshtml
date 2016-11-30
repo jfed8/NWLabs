@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Pharmacology";
+}
+
+<h2>Pharmacology Catalog</h2>
+
+<div class="table">
+    <table border="1">
+        <tr>
+            <th>Catalog #</th>
+            <th>Assay Name</th>
+            <th>Assay Type</th>
+            <th>Estimated Days</th>
+            <th>Protocol</th>
+            <th>Quote</th>
+            
+            
+        </tr>
+        <tr>
+            <td>199016</td>
+            <td>Lipoxygenase</td>
+            <td>Laboratory</td>
+            <td>21 days</td>
+            <td>@Html.ActionLink("View Protocol", "Protocol", "Catalog")</td>
+            <td>@Html.ActionLink("Request Quote", "Quote", "Catalog")</td>
+        </tr>
+        <tr>
+            <td>199017</td>
+            <td>Abisdia corymbifera</td>
+            <td>Biological</td>
+            <td>1 day</td>
+            <td>@Html.ActionLink("View Protocol", "Protocol", "Catalog")</td>
+            <td>@Html.ActionLink("Request Quote", "Quote", "Catalog")</td>
+        </tr>
+
+        <tr>
+            <td>199018</td>
+            <td>Acetyl CoA Synthetase</td>
+            <td>Laboratory</td>
+            <td>7 days</td>
+            <td>@Html.ActionLink(" View Protocol ", "Protocol", "Catalog")</td>
+            <td>@Html.ActionLink(" Request Quote ", "Quote", "Catalog")</td>
+        </tr>
+
+        <tr>
+            <td>199019</td>
+            <td>Acinetobacter baumannii</td>
+            <td>Biological</td>
+            <td>29 days</td>
+            <td>@Html.ActionLink("View Protocol", "Protocol", "Catalog")</td>
+            <td>@Html.ActionLink("Request Quote", "Quote", "Catalog")</td>
+        </tr>
+        
+    </table>
+
+</div>
+
