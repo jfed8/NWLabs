@@ -175,6 +175,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\formbox.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -231,6 +232,10 @@
     <Content Include="Views\Customer\CustAccount.cshtml" />
     <Content Include="Views\WorkOrder\Index.cshtml" />
     <Content Include="Views\WorkOrder\Results.cshtml" />
+    <Content Include="Views\Shared\_LayoutCustomer.cshtml" />
+    <Content Include="Views\Shared\_LayoutEmployee.cshtml" />
+    <Content Include="Views\Shared\_LoginPartialEmployee.cshtml" />
+    <Content Include="Views\Shared\_LoginPartialCustomer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
