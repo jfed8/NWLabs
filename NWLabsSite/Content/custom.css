@@ -3,10 +3,10 @@
 }
 
 .my-jumbotron {
-    padding-top: 30px;
+    padding-top: 400px;
     padding-bottom: 30px;
     margin-bottom: 30px;
-    background-image: url(../../Content/img/TestTubes.jpg);
+    background-image: url(../../Content/img/INTEXJumbotron-01.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
