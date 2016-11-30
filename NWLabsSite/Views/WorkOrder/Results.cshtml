@@ -1,7 +1,107 @@
-﻿
-@{
-    ViewBag.Title = "Results";
+﻿@{
+    ViewBag.Title = "Details";
 }
+<br />
+<h3>Order Details</h3>
+<br />
 
-<h2>Results</h2>
+<table class="table">
+    <tr>
+        <th>
+            Order
+        </th>
+        <th>
+            Scheduled Date
+        </th>
+        <th>
+            Hours Worked
+        </th>
+        <th>
+            Employee Name
+        </th>
+        <th>
+            Status
+        </th>
+        <th>
+            Comments
+        </th>
+        <th>
+            Work Details
+        </th>
+    </tr>
+
+
+    <tr>
+        <td>
+            8675309
+        </td>
+        <td>
+            12/01/2016
+        </td>
+        <td>
+            27.5
+        </td>
+        <td>
+            Shawn Spencer
+        </td>
+        <td>
+            Completed
+        </td>
+        <td>
+            Rushed
+        </td>
+        <td>
+            @Html.ActionLink("See Details", "Results", "WorkOrder")
+        </td>
+    </tr>
+    <tr>
+        <td>
+            8675310
+        </td>
+        <td>
+            01/19/2017
+        </td>
+        <td>
+            10.2
+        </td>
+        <td>
+            Benedict Cumberbatch
+        </td>
+        <td>
+            Pending
+        </td>
+        <td>
+            Rushed
+        </td>
+        <td>
+            @Html.ActionLink("See Details", "Results", "WorkOrder")
+        </td>
+    </tr>
+    <tr>
+        <td>
+            8675311
+        </td>
+        <td>
+            02/15/2017
+        </td>
+        <td>
+            11
+        </td>
+        <td>
+            Zooey Deschanel
+        </td>
+        <td>
+            Pending
+        </td>
+        <td>
+            Discount Applied
+        </td>
+        <td>
+            @Html.ActionLink("See Details", "Results", "WorkOrder")
+        </td>
+    </tr>
+
+
+</table>
+
 
