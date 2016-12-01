@@ -3,5 +3,20 @@
     ViewBag.Title = "UploadResults";
 }
 
-<h2>UploadResults</h2>
+<link rel="stylesheet" type="text/css" href="~/Content/formbox.css">
+
+<h3 style="text-align:center;">Upload Results</h3>
+
+<div class="col-md-12">
+    <form class="cf">
+        <div class="cf">
+            <input style="background:#4582EC;"class="center" type="submit" value="Upload File" id="input-submit">
+            <input class="center" type="email" id="input-email" placeholder="Result ID">
+            <input class="center" type="text" id="input-subject" placeholder="Hours Worked">
+        </div>
+        <div class="cf">
+            <textarea class="center" name="message" type="text" id="input-message" placeholder="Comments"></textarea>
+        </div>
+    </form>
+</div>
 

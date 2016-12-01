@@ -5,7 +5,16 @@
     ViewBag.Title = "Index";
 }
 <br />
-<h3>Work Orders</h3>
+<div class="row">
+    <div class="col-md-3">
+        <h3>Work Orders</h3>
+    </div>
+    <div class="col-md-3 col-md-offset-6">
+        <br />
+        <a class="btn btn-primary" style="float:right;" href="@Url.Action("CreateWorkOrder", "WorkOrder")">Create New Work Order</a>  
+    </div>
+</div>
+
 <br />
 
 <table class="table">
@@ -29,7 +38,7 @@
             Comments
         </th>
         <th>
-            Work Details
+            Details/Results
         </th>
     </tr>
 
@@ -54,7 +63,7 @@
                 Rushed
             </td>
             <td>
-                @Html.ActionLink("See Details", "Results", "WorkOrder")
+                @Html.ActionLink("See Details/Update Results", "Results", "WorkOrder")
             </td>
         </tr>
     <tr>
@@ -77,7 +86,7 @@
             Rushed
         </td>
         <td>
-            @Html.ActionLink("See Details", "Results", "WorkOrder")
+            @Html.ActionLink("See Details/Update Results", "Results", "WorkOrder")
         </td>
     </tr>
     <tr>
@@ -100,11 +109,11 @@
             Discount Applied
         </td>
         <td>
-            @Html.ActionLink("See Details", "Results", "WorkOrder")
+            @Html.ActionLink("See Details/Upload Results", "Results", "WorkOrder")
         </td>
     </tr>
 
-
 </table>
+
 
 
