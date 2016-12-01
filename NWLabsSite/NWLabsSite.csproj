@@ -169,6 +169,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Assay.cs" />
+    <Compile Include="Models\Assay_Test.cs" />
     <Compile Include="Models\Compound.cs" />
     <Compile Include="Models\Compound_Item.cs" />
     <Compile Include="Models\Customer.cs" />
