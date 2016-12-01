@@ -26,6 +26,11 @@ namespace NWLabsSite.Controllers
             return View();
         }
 
+        // GET: WorkOrder
+        public ActionResult Reports()
+        {
+            return View();
+        }
 
     }
 }

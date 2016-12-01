@@ -31,6 +31,29 @@
         font-weight: 200;
     }
 
+.report-button {
+    background-image: url("https://cdn1.iconfinder.com/data/icons/multimedia-marketing/512/22-512.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    fill-opacity: inherit;
+    border-radius: 15px;
+}
+
+.report-button2 {
+    background-image: url("https://cdn3.iconfinder.com/data/icons/glypho-money-and-finance/64/money-dollar-circle-512.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    fill-opacity: inherit;
+    border-radius: 15px;
+}
+
+.report-title {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: x-large;
+}
+
 #video-background { 
       position: fixed;
         top: 0;
