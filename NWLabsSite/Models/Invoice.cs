@@ -6,9 +6,12 @@ using System.Web;
 
 namespace NWLabsSite.Models
 {
-    [Table("Customers")]
-    public class Customers
+    [Table("Invoice")]
+    public class Invoice
     {
-        public String Instrument_Description { get; set; }
+
+        [Key]
+
+
     }
 }
