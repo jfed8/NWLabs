@@ -90,6 +90,12 @@ form textarea {
     margin-left: auto;
 }
 
+
+.selected {
+    font-family: 'Merriweather', sans-serif;
+}
+
+
 @media (max-width: 480px) {
   .half {
     width: 100%;

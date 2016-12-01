@@ -2,19 +2,34 @@
 @{
     ViewBag.Title = "Quote";
 }
+
+<link rel="stylesheet" type="text/css" href="~/Content/formbox.css">
+
+
+
 <br />
 <h3>Quote</h3>
 <br />
 <p>You have requested a quote for the Lipoxygenase Assay, please select your compound below.</p>
 
+<br />
+<br />
+
 @*Form for the user to select the compound and request a quote*@
-@using (Html.BeginForm("ConfirmedQuote", "Catalog", FormMethod.Get))
-{
-    <p>Assay: @ViewBag.Assay </p>
-    <p>Compound: @Html.DropDownList("Compound") </p>
-    <br />
-    <input type="submit" value="Request Quote">
-}
+
+
+<form class="cf">
+    <div class="half left cf">
+        <p id="selected"><b>Assay:</b> @ViewBag.Assay </p>
+        <p id="selected"><b>Compound:</b> @Html.DropDownList("Compound") </p>
+        <input type="text" id="input-name" placeholder="if Other, please specify">
+        <input type="email" id="input-email" placeholder="Contact Email">
+    </div>
+    <div class="half right cf">
+        <textarea name="message" type="text" id="input-message" placeholder="Additional Comments"></textarea>
+    </div>
+    <input type="submit" value="Request Quote" id="input-submit">
+</form>
 
 
 
