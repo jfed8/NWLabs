@@ -20,6 +20,6 @@ namespace NWLabsSite.Models
         public string CustZipCode { get; set; }
         public string CustPhoneNumber { get; set; }
         public string CustEmail { get; set; }
-        public double AccountBalance { get; set; }
+        public decimal AccountBalance { get; set; }
     }
 }

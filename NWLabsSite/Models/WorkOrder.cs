@@ -14,7 +14,7 @@ namespace NWLabsSite.Models
         public int WorkOrder_ID { get; set; }
         public int Customer_ID { get; set; }
         public string Comment { get; set; }
-        public double Discount { get; set; }
+        public decimal Discount { get; set; }
         public bool IsRushed { get; set; }
         public int Invoice_ID { get; set; }
     }
