@@ -182,6 +182,7 @@
     <Compile Include="Models\Position.cs" />
     <Compile Include="Models\Quote.cs" />
     <Compile Include="Models\Sample.cs" />
+    <Compile Include="Models\TestSchedule.cs" />
     <Compile Include="Models\Test_Tube.cs" />
     <Compile Include="Models\WorkOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
