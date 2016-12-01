@@ -52,7 +52,7 @@ namespace NWLabsSite.Controllers
             }
         }
 
-        //
+        // Method that returns the login View.  The login view has options for both Customer and Employee Login
         // GET: /Account/Login
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
@@ -134,7 +134,7 @@ namespace NWLabsSite.Controllers
             }
         }
 
-        //
+        //Controller for Customer to create new Customer Account
         // GET: /Account/Register
         [AllowAnonymous]
         public ActionResult Register()
