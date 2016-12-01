@@ -1,0 +1,1 @@
+Data Source=DESKTOP-BUS6KNH\SQLEXPRESS;Initial Catalog=NWLabs;Integrated Security=True
