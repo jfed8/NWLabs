@@ -7,6 +7,7 @@
 <br />
 <p>You have requested a quote for the Lipoxygenase Assay, please select your compound below.</p>
 
+@*Form for the user to select the compound and request a quote*@
 @using (Html.BeginForm("ConfirmedQuote", "Catalog", FormMethod.Get))
 {
     <p>Assay: @ViewBag.Assay </p>
@@ -14,4 +15,6 @@
     <br />
     <input type="submit" value="Request Quote">
 }
+
+
 

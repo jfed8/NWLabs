@@ -18,6 +18,8 @@
                     <div class="col-md-2">
 
                     </div>
+
+                    @*Nav-pill to provide option for Customer and Employee Login*@
                     <div class="col-md-10">
                         <ul class="nav nav-pills">
                             <li class="active"><a data-toggle="pill" href="#home">Customer</a></li>
@@ -52,7 +54,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-10">
-                                <a class="btn btn-default" href="@Url.Action("CustAccount", "Customer")">Log in</a>
+                                <a class="btn btn-default" href="@Url.Action("CustAccount", "Customer")">Log in</a>  @*Takes Customer to Customer Account After Login*@
                             </div>
                         </div>
                     </div>
@@ -81,7 +83,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-10">
-                                <a class="btn btn-default" href="@Url.Action("Index", "WorkOrder")">Log in</a>
+                                <a class="btn btn-default" href="@Url.Action("Index", "WorkOrder")">Log in</a> @*Takes Employee to WorkOrders after Login*@
                             </div>
                         </div>
                     </div>
