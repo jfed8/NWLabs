@@ -185,6 +185,7 @@
     <Compile Include="Models\Sample.cs" />
     <Compile Include="Models\Test.cs" />
     <Compile Include="Models\TestSchedule.cs" />
+    <Compile Include="Models\Test_Material.cs" />
     <Compile Include="Models\Test_Results.cs" />
     <Compile Include="Models\Test_Tube.cs" />
     <Compile Include="Models\WorkOrder.cs" />
